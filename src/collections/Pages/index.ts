@@ -106,6 +106,42 @@ export const Pages: CollectionConfig<'pages'> = {
               titlePath: 'meta.title',
               descriptionPath: 'meta.description',
             }),
+            {
+              name: 'focusKeyword',
+              type: 'text',
+              label: 'Focus Keyword',
+            admin: {
+              description: 'Primary keyword for SEO analysis.',
+            },
+},
+{
+  name: 'canonicalURL',
+  type: 'text',
+  label: 'Canonical URL',
+  admin: {
+    description: 'Preferred URL for search engines.',
+  },
+},
+{
+  name: 'noIndex',
+  type: 'checkbox',
+  label: 'No Index',
+  defaultValue: false,
+},
+{
+  name: 'noFollow',
+  type: 'checkbox',
+  label: 'No Follow',
+  defaultValue: false,
+},
+{
+  name: 'schemaMarkup',
+  type: 'textarea',
+  label: 'Custom Schema Markup (JSON-LD)',
+  admin: {
+    description: 'Enter valid JSON-LD structured data.',
+  },
+},
           ],
         },
       ],

@@ -20,3 +20,11 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Environment variables and secrets
+.env.*
+!.env.example
+
+# Local database and logs
+*.log
+test.env
